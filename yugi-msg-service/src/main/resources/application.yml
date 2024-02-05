@@ -1,0 +1,27 @@
+# Server配置
+server:
+  port: 8383
+
+
+# 日志配置
+logging:
+  level:
+    com.tdd: debug
+    org.springframework: warn
+
+# Spring配置
+spring:
+  application:
+    name: yugi-msg-service
+  profiles:
+    active: test
+  mail:
+    host: smtp.qq.com
+    username: 1500841683@qq.com
+    password: trokynuxgyqvbaai
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true

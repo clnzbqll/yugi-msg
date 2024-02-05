@@ -1,0 +1,18 @@
+# Spring配置
+spring:
+  # Nacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: dev
+
+
+# Rocket配置
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: yugi-msg-group
+    send-message-timeout: 300000
+
+
