@@ -25,7 +25,7 @@ public class MsgSender {
      * @param mail 邮件
      */
     public void sendEmail(Email mail) {
-        System.out.println("你好");
-        rocketMQTemplate.convertAndSend(TopicConst.EMAIL, mail);
+        rocketMQTemplate.syncSend(TopicConst.EMAIL, mail);
+        log.info("消息发送成功");
     }
 }

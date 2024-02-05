@@ -2,13 +2,6 @@
 server:
   port: 8383
 
-
-# 日志配置
-logging:
-  level:
-    com.tdd: debug
-    org.springframework: warn
-
 # Spring配置
 spring:
   application:
